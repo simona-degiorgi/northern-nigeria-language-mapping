@@ -1,4 +1,4 @@
-## Main household language in North Nigeria
+# Main household language in northern Nigeria
 
 Four thematic maps of language use across 131 Local Government Areas (LGAs) in six
 northern Nigerian states, built from open humanitarian survey data.
@@ -13,7 +13,9 @@ The underlying survey question is:
 > *What is the main language your household uses at home?*
 
 It is a **single-response** question, the unit is the **household**, and it refers
-to the **main** language at home. 
+to the **main** language at home. So the mapped values are the share of households
+reporting a given language as their main one — **not** the share of speakers.
+
 
 The distinction matters: Hausa is widely used as a lingua franca across northern Nigeria by people who speak something else at home, so actual speakers are considerably more numerous than these maps suggest.
 
@@ -148,7 +150,7 @@ Run all cells. All paths are relative to the notebook folder; the CSVs land in
 ## Limitations
 
 1. Coverage is **humanitarian, not geographic**: 131 of 774 LGAs, six of 36
-   states, selected because a crisis response was active. 
+   states, selected because a crisis response was active. Kano — the most populous northern state and the historic centre of Hausa — is absent, as is Kaduna.
 2. Five Borno LGAs were **inaccessible** to the survey, not empty.
 3. State-level figures are **unweighted by population**.
 4. Language categories have **uneven granularity**: some entries are single
@@ -161,5 +163,6 @@ linguistic map of northern Nigeria.
 
 ## Licence
 
-Source data is published under the terms given on its HDX pages. 
+Source data is published under the terms given on its HDX pages. Code in this
+repository is free to reuse; please cite the original data sources.
 
