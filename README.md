@@ -27,7 +27,7 @@ The distinction matters: Hausa is widely used as a lingua franca across northern
 
 ### 1. Survey coverage
 
-![Survey coverage](Immagini/LGA_with_data.png)
+![Survey coverage](LGA_with_data.png)
 
 Where the data exists. The COD-AB boundary file has 774 LGAs; the dataset covers
 131 of them, in six states. Five LGAs in northern Borno are missing because the
@@ -35,7 +35,7 @@ survey could not reach them.
 
 ### 2. Prevalent language by LGA
 
-![Prevalent language](Immagini/Main_language.png)
+![Prevalent language](Main_Language.png)
 
 The most frequently reported main household language in each LGA. Eleven distinct
 languages; Hausa prevails in 91 of 131 LGAs. Opacity is scaled to the prevailing
@@ -44,7 +44,7 @@ one where it reaches 100%.
 
 ### 3. Spread of Hausa
 
-![Hausa](Immagini/Hausa.png)
+![Hausa](Hausa.png))
 
 Hausa appears in 130 of 131 LGAs, but is the prevailing language in only 91. The
 single LGA without it — Kala/Balge, on the Cameroon border — is a genuine absence,
@@ -56,7 +56,7 @@ flatten the map.
 
 ### 4. Language composition of the north-eastern states
 
-![North-east composition](Immagini/Nord-Est.png)
+![North-east composition](Nord-Est.png)
 
 Pie charts for Adamawa, Borno and Yobe. Only the north-east is shown — see below
 for why.
@@ -130,7 +130,7 @@ should not be read as population shares.
 Esplora_lingue.ipynb                      notebook: data prep, checks, exports
 clearglobal_language_use_nga_admin2.csv   source dataset
 output/                                   CSVs generated for the QGIS joins
-Immagini/                                 map exports from QGIS
+*.png                                     map exports from QGIS
 ```
 
 Boundary shapefiles are not included — download them from the COD-AB link above
