@@ -1,7 +1,8 @@
-# Northern-nigeria-language-mapping
+## Main household language in North Nigeria
+
 Four thematic maps of household language use in northern Nigeria, from open REACH/ClearGlobal survey data. Python + QGIS.
 
-# Main household language in northern Nigeria
+## Main household language in northern Nigeria
 
 Four thematic maps of language use across 131 Local Government Areas (LGAs) in six
 northern Nigerian states, built from open humanitarian survey data.
@@ -27,21 +28,21 @@ The distinction matters: Hausa is widely used as a lingua franca across northern
 
 ### 1. Survey coverage
 
-![Survey coverage](LGA_with_data.png)
+![Survey coverage](Images/LGA_with_data.png)
 
 Where the data exists. The dataset covers 131 of the 774 LGAs, in six states.
 Five LGAs in northern Borno are missing because the survey could not reach them.
 
 ### 2. Prevalent language by LGA
 
-![Prevalent language](Most_reported_language.png)
+![Prevalent language](Images/Most_reported_language.png)
 
 The most frequently reported main household language in each LGA. Eleven distinct
-languages.
+languages; Hausa prevails in 91 of the 131 LGAs.
 
 ### 3. Spread of Hausa
 
-![Hausa](Hausa.png))
+![Hausa](Images/Hausa.png)
 
 Hausa appears in 130 of 131 LGAs, but is the prevailing language in only 91. The
 single LGA without it — Kala/Balge, on the Cameroon border — is a genuine absence,
@@ -55,7 +56,7 @@ of different languages remain comparable.
 
 ### 4. Language composition of the north-eastern states
 
-![North-east composition](Nord-Est.png)
+![North-east composition](Images/North-East.png)
 
 Pie charts for Adamawa, Borno and Yobe. Only the north-east is shown — see below
 for why.
@@ -99,6 +100,10 @@ whether the result is meaningful:
 | Wrong | only LGAs where the language appears | slices do not add up |
 | Correct | all surveyed LGAs in the state | sums to exactly 100% |
 
+The first method inflates every language in proportion to how localised it is: a
+language spoken in 2 of 22 LGAs with a share of 0.8 would appear as 80% of the
+state instead of 7.3%. An earlier version of this map used it, producing slices
+summing to 102.5% for Zamfara and 206.3% for Borno.
 
 Note that state averages are **unweighted by population**: every LGA counts
 equally, so Maiduguri carries the same weight as a small rural LGA. This is the
@@ -123,10 +128,10 @@ should not be read as population shares.
 ## Repository contents
 
 ```
-Esplora_lingue.ipynb                      notebook: data prep, checks, exports
+Nigerian_Languages_Notebook.ipynb         notebook: data prep, checks, exports
 clearglobal_language_use_nga_admin2.csv   source dataset
 output/                                   CSVs generated for the QGIS joins
-*.png                                     map exports from QGIS
+Images/                                   map exports from QGIS
 ```
 
 Boundary shapefiles are not included — download them from the COD-AB link above
@@ -136,7 +141,7 @@ and place `nga_admin1.*` and `nga_admin2.*` alongside the notebook.
 
 ```bash
 pip install pandas
-jupyter lab Esplora_lingue.ipynb
+jupyter lab Nigerian_Languages_Notebook.ipynb
 ```
 
 Run all cells. All paths are relative to the notebook folder; the CSVs land in
