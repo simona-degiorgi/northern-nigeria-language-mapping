@@ -11,7 +11,7 @@ Data preparation and quality checks in Python; cartography in QGIS.
 
 ## What the data measures
 
-The underlying survey question, identical in both source surveys, is:
+The underlying survey question is:
 
 > *What is the main language your household uses at home?*
 
@@ -29,18 +29,15 @@ The distinction matters: Hausa is widely used as a lingua franca across northern
 
 ![Survey coverage](LGA_with_data.png)
 
-Where the data exists. The COD-AB boundary file has 774 LGAs; the dataset covers
-131 of them, in six states. Five LGAs in northern Borno are missing because the
-survey could not reach them.
+Where the data exists. The dataset covers 131 of the 774 LGAs, in six states.
+Five LGAs in northern Borno are missing because the survey could not reach them.
 
 ### 2. Prevalent language by LGA
 
-![Prevalent language](Main_Language.png)
+![Prevalent language](Most_reported_language.png)
 
 The most frequently reported main household language in each LGA. Eleven distinct
-languages; Hausa prevails in 91 of 131 LGAs. Opacity is scaled to the prevailing
-share, so an LGA where the top language reaches 21% is not shown the same way as
-one where it reaches 100%.
+languages.
 
 ### 3. Spread of Hausa
 
@@ -50,9 +47,11 @@ Hausa appears in 130 of 131 LGAs, but is the prevailing language in only 91. The
 single LGA without it — Kala/Balge, on the Cameroon border — is a genuine absence,
 not a data gap: it is a Kanuri and Shuwa Arabic area.
 
-Class breaks are user-defined rather than equal-interval, because the distribution
-is heavily skewed (median 0.88, third quartile 0.99) and equal intervals would
-flatten the map.
+Class breaks are user-defined. The distribution is heavily skewed — median 0.88,
+third quartile 0.99 — so the top of the range is split more finely (0.75–0.95 and
+0.95–1) to separate LGAs where Hausa is dominant from those where it is close to
+universal. The breaks are deliberately kept round and interpretable so that maps
+of different languages remain comparable.
 
 ### 4. Language composition of the north-eastern states
 
@@ -100,9 +99,6 @@ whether the result is meaningful:
 | Wrong | only LGAs where the language appears | slices do not add up |
 | Correct | all surveyed LGAs in the state | sums to exactly 100% |
 
-An earlier version of this map used the first method, producing slices summing to
-102.5% for Zamfara and 206.3% for Borno. The notebook uses the second and asserts
-the result.
 
 Note that state averages are **unweighted by population**: every LGA counts
 equally, so Maiduguri carries the same weight as a small rural LGA. This is the
