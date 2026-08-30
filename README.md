@@ -56,7 +56,7 @@ of different languages remain comparable.
 
 ### 4. Language composition of the north-eastern states
 
-![North-east composition](Images/North-East.png)
+![North-east composition](Images/North-East_Languages_Distribution.png)
 
 Pie charts for Adamawa, Borno and Yobe. Only the north-east is shown — see below
 for why.
