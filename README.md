@@ -1,9 +1,5 @@
 ## Main household language in North Nigeria
 
-Four thematic maps of household language use in northern Nigeria, from open REACH/ClearGlobal survey data. Python + QGIS.
-
-## Main household language in northern Nigeria
-
 Four thematic maps of language use across 131 Local Government Areas (LGAs) in six
 northern Nigerian states, built from open humanitarian survey data.
 
@@ -17,8 +13,7 @@ The underlying survey question is:
 > *What is the main language your household uses at home?*
 
 It is a **single-response** question, the unit is the **household**, and it refers
-to the **main** language at home. So the mapped values are the share of households
-reporting a given language as their main one — **not** the share of speakers.
+to the **main** language at home. 
 
 The distinction matters: Hausa is widely used as a lingua franca across northern Nigeria by people who speak something else at home, so actual speakers are considerably more numerous than these maps suggest.
 
@@ -153,14 +148,11 @@ Run all cells. All paths are relative to the notebook folder; the CSVs land in
 ## Limitations
 
 1. Coverage is **humanitarian, not geographic**: 131 of 774 LGAs, six of 36
-   states, selected because a crisis response was active. Kano — the most
-   populous northern state and the historic centre of Hausa — is absent, as is
-   Kaduna.
+   states, selected because a crisis response was active. 
 2. Five Borno LGAs were **inaccessible** to the survey, not empty.
 3. State-level figures are **unweighted by population**.
 4. Language categories have **uneven granularity**: some entries are single
    languages, others are groupings of varieties.
-5. The two survey rounds are nine months apart and fall in different seasons (Aug–Oct 2021 and Mar–Jul 2022).
 
 These maps are a valid record of what these two surveys measured. They are not a
 linguistic map of northern Nigeria.
@@ -169,6 +161,5 @@ linguistic map of northern Nigeria.
 
 ## Licence
 
-Source data is published under the terms given on its HDX pages. Code in this
-repository is free to reuse; please cite the original data sources.
+Source data is published under the terms given on its HDX pages. 
 
