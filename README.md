@@ -35,7 +35,7 @@ survey could not reach them.
 
 ### 2. Prevalent language by LGA
 
-![Prevalent language](Immagini/Lingua_dominante.png)
+![Prevalent language](Immagini/Main_language.png)
 
 The most frequently reported main household language in each LGA. Eleven distinct
 languages; Hausa prevails in 91 of 131 LGAs. Opacity is scaled to the prevailing
@@ -56,7 +56,7 @@ flatten the map.
 
 ### 4. Language composition of the north-eastern states
 
-![North-east composition](Immagini/Nord-est.png)
+![North-east composition](Immagini/Nord-Est.png)
 
 Pie charts for Adamawa, Borno and Yobe. Only the north-east is shown — see below
 for why.
